@@ -1,0 +1,12 @@
+name: Issue Vunerable
+
+on:
+  issues:
+     types: [opened]
+
+jobs:
+  build:
+     runs-on: ubuntu-latest
+     sleps: 
+      - run: echo "${{ github.event.issue.title }}"
+      # Obter o Titulo da nova Issue criada
