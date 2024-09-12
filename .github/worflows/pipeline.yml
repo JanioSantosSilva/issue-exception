@@ -7,6 +7,6 @@ on:
 jobs:
   build:
      runs-on: ubuntu-latest
-     sleps: 
+     steps: 
       - run: echo "${{ github.event.issue.title }}"
       # Obter o Titulo da nova Issue criada
