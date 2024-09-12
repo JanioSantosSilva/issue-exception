@@ -5,7 +5,7 @@ on:
      types: [opened]
 
 jobs:
-  build:
+  commentCreated:
      runs-on: ubuntu-latest
      steps: 
       - run: echo "${{ github.event.issue.title }}"
